@@ -1,0 +1,15 @@
+First create the local folder and add some files in it.
+
+Once you are sure you want to start tracking this folder using git,
+then add command git init. This will initialize the repository.
+
+Then do a git status, git add ., git commit -m "Message"
+to commit items to local repository.
+
+Go to github page and create a folder with the same name as your local folder
+
+and then run commands git remote add origin urlname
+
+git push -u origin master to push changes to the remote url.
+
+
