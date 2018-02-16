@@ -12,4 +12,14 @@ and then run commands git remote add origin urlname
 
 git push -u origin master to push changes to the remote url.
 
+so the sequence of commands are:
+1. git init
+2. git add .
+3. git commit -m "Message"
+4. create a new repository on github page
+5. git remote add origin url 
+6. git push -u origin master
+done
+
+
 
