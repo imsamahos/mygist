@@ -1,0 +1,130 @@
+SVN is central version control system 
+Git is a distributed version control system. 
+Everybody has a local repository. Good thing is 
+when you don't have access to remote repository 
+then every developer has a copy on their local systems.
+
+git-scm.com 
+#Check version
+
+git --version
+
+# Above command to check if git got successfully installed
+
+################################
+
+# Set config values
+git config --global user.name "Corey Shafer"
+git config --global user.email "CoreyMShafer@gmail.com"
+
+git config --list # this command will list all the values 
+
+git config is the first git verb we read
+
+###################################
+
+git help <verb/ action>
+
+git help config 
+git config --help
+
+####################################
+
+2 common scenarios for people to start with git
+
+1) you have an existing code on your local machine that you wanted to start tracking using git
+
+2) when you have existing project remotely that you want to start tracking
+
+1) Initialize a repository from existing code 
+as simple as typing 
+
+--git init
+
+go to the directory you have project files and type git init
+
+you'll find a .git folder created in your folder
+
+if in future you want to stop tracking this folder using git 
+all you need to do is remove .git 
+
+rm -rf .git
+do an ls -la
+--- git status
+
+touch .gitignore 
+
+# to ignore some files having personal preferences, you wouldnt want everyone to see your personal 
+preferences so you want to ignore
+
+add files in gitigonore file
+
+git status
+
+gitignore
+something.py
+
+Add files to staging area
+
+git add .gitignore
+
+git status 
+something.py
+
+adds everything to staging area
+
+git add -A
+
+#remove files from staging area
+
+git reset calc.py
+
+git status
+
+if you want to remove everything from staging area
+
+git reset will remove everything from staging area
+
+if we do git status we will find every file back to the working directory
+
+first commit 
+
+git commit -m "Initial commit" 
+ will add the files to repository
+
+Now when we do a git status, it will show working directory is clean 
+
+Another useful command is git log command 
+which will list out the commit you just did 
+
+
+2) Cloning a remote repo 
+
+git clone <url> <where you want to clone>
+
+git clone https://... .(current directory)
+
+viewing information about the remote repository 
+
+git remote -v # list information of remote 
+git branch -a
+
+
+####################################
+
+git add -A
+It does the entire working directory 
+
+git add -A specify the directory 
+default is -A
+
+
+git add -u
+--update option
+only delted and modified files not the new ones
+
+git add .
+Similar to A option in the current directory
+
+git add *
+
